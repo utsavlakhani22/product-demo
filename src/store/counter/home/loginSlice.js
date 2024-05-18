@@ -1,12 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { loginUserAPI } from "./homeApi";
-import { Navigate } from "react-router-dom";
 
 const initialState = {
     loader : false,
     token : {}
 }
-
 
 export const loginUser = createAsyncThunk("product/loginUser", async (values) => {
     const response = await loginUserAPI(values)
@@ -14,8 +12,7 @@ export const loginUser = createAsyncThunk("product/loginUser", async (values) =>
     if(response && response?.status === 200) {
         // console.log(response)
         localStorage.setItem("token",response?.data?.token)
-
-    }
+    }   
 })
 
 const loginSlice = createSlice({

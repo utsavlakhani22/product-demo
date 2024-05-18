@@ -4,7 +4,7 @@ export const Dashboard = () => {
     let navigate = useNavigate()
     return (
         <>
-            <h1>Dashborad</h1>
+            <h1>Dashboard</h1>
             <button onClick={() => {
                 localStorage.clear()
                 navigate('/login')

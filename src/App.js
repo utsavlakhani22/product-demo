@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { Provider, useDispatch, useSelector } from 'react-redux';
+import { Provider } from 'react-redux';
 import './App.css';
 // import FunctionComp from './functionComp';
 // import FunctionComp from './tabledisplay';
@@ -14,7 +14,7 @@ import Home from './store/counter/home/home';
 import { store } from './store';
 import Login from './store/counter/home/login';
 import ProductDetail from './store/counter/home/Productdetail'
-import { Dashboard } from './store/counter/home/Dashborad';
+import { Dashboard } from './store/counter/home/Dashboard';
 
 
 function App() {

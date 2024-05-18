@@ -19,6 +19,9 @@ const Home = () => {
             <Link to={'/Login'}>
                 <button>Login</button>
             </Link>
+            <Link to={'/Login'} style={{float : "right"}}>
+                <button>Logout</button>
+            </Link>
             <div className="gallery">
                 {loader ? <h1>Loading...</h1>
                     : data?.products?.length > 0 ?
